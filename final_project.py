@@ -1,5 +1,3 @@
-""" Final Project - create a column schedule from a structural model with exported CSV """
-
 # Import packages
 import pandas as pd
 import numpy as np
@@ -44,10 +42,10 @@ pu_grav_df.head()
 
 
 # read in the columndesignsummary.csv
-# this is kind of janky still b/c bentley's csv is not formatted correctly
+# this is still somewhat a manual process because Bentley's csv is not formatted correctly
 # some manual adjustments were required on the raw csv file
 
-# TODO create prompt for selecting csv file
+# create prompt for selecting csv file
 cds = pd.read_csv('/Users/danki/edu/cs50/coldesignsummary.csv', sep=',', 
                   header=0, skiprows=2, error_bad_lines=False)
 cds.dropna(axis=0, how='any',inplace=True)
@@ -80,7 +78,4 @@ filepath = input("Enter File Path: ") # e.g. /Users/danki/edu/cs50/
 # write to excel
 xlsx = grav_sched.to_excel(filepath+filename, sheet_name='Grav_Sched')
 
-# center text in cell (NOT WORKING)
-#wb = openpyxl.load_workbook(filepath+filename)
-#lignment=Alignment(horizontal='center', vertical='center')
 
