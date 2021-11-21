@@ -1,10 +1,7 @@
-# FINAL PROJECT: Column Schedule Automation
+# Column Schedule Automation
 
 ## Context
-I am a structural engineer in NYC, and I took this course to look for opportunities
-in my day-to-day to automate mundane tasks at work. 
-
-For my final project, I created a way to automate the creation of a _column schedule_. 
+Generate a column schedule from RAM Structural Systems
 
 For each column in a building, structural engineers are required to document:
 1. the load to the columns (generally in kips, where 1 kip = 1000 lbs)
@@ -23,10 +20,6 @@ Currently, an engineer must generate these schedules by hand from the structural
 
 RAM Structural Systems 3D model example:
 ![3D model](./3d_model.png)
-
-This course has given me to the tools to automate such processes.
-
-## Introducing my final project
 
 ### Steps:
 1. extract raw data from structural model
@@ -53,6 +46,6 @@ This course has given me to the tools to automate such processes.
 ## Looking forward
 This project is specific to structral models using Bentley's RAM Structural Systems. I imagine that a similar program could be written for other structural modelling programs, as most structural software have the capability to produce post-processed data (though some hefty data cleaning may be involved).
 
-The creation of a column schedule for an engineer can vary from half a day to a full day. Using this program would greatly reduce the hours and human errors in the creation of a column schedule. I would approximate a 75% reduction. If, office wide, 100 column schedules are generated per year, and it takes an average of 6 hours to create, the gained efficiency would be 450 hours per annum (or approximately 11 weeks worth of work using a 40 hour work week). In the context of a single project, it would take me about 5 minutes to extract the data and run my program, whereas before, it would take me an average of 4 hours to complete (i.e. I have become 98% more efficient at this task).
+The creation of a column schedule for an engineer can vary from half a day to a full day. Using this program would greatly reduce the hours and human errors in the creation of a column schedule. 
 
-I will still need to run some validation on this program for a couple of corner cases (sloping columns, columns with different load combinations). Once validation is complete, my intent is to make this into an executable file such that anyone in my office will be able to utilize this tool.
+I will still need to run some validation on this program for a couple of corner cases (sloping columns, columns with different load combinations). Once validation is complete, my intent is to make this into an executable file such that anyone in the office will be able to utilize this tool.
